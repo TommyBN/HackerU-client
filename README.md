@@ -1,4 +1,4 @@
-# App instructions
+# App instructions - by TommyBN
 
 In order to run the full app, go the the full repository (HackerU-full) and see instructions on the README.md file
 
