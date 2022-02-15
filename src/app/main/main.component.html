@@ -1,0 +1,44 @@
+
+
+<div class="container">
+
+    <div class="row mt-5"></div>
+  
+    <div class="row mt-4">
+        <h1 class="mx-auto text-info header">Fantastic LTD - Our Lecturers</h1>
+    </div>
+
+    <div class="row mt-2">
+        <label class="mx-auto">Filter By Programming Language:</label>
+        <select class="form-control w-50" (change)="filterByPlanguage($event)">
+            <option disabled>Choose Language</option>
+            <option value="all">All</option>
+            <option *ngFor="let language of languages" [value]="language.id">{{language.name}}</option>
+        </select>
+    </div>
+
+    <div class="row mt-4">
+        <table class="table table-bordered">
+            <thead>
+                <th>Lecturer Name</th>
+                <th>Email</th>
+                <th>Programming Languages</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let lect of lecturers">
+                    <td>{{lect.name}}</td>
+                    <td>{{lect.email}}</td>
+                    <td>
+                        <ul class="list-group">
+                            <li *ngFor="let lang of lect.languages; let i = index" [ngClass]="lang | languageColor" 
+                                class="list-group-item w-50">
+                                {{lang | language}}
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
