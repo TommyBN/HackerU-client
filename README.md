@@ -1,3 +1,7 @@
+# App instructions
+
+In order to run the full app, go the the full repository (HackerU-full) and see instructions on the README.md file
+
 # Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
