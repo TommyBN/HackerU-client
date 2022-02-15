@@ -14,7 +14,7 @@ export class LanguageColorPipe implements PipeTransform {
       case 4: return 'list-group-item-warning'
       case 5: return 'list-group-item-info'
       case 6: return 'list-group-item-light'
-      case 7: return 'list-group-item-dark'
+      case 7: return 'custom-class-3'
       case 8: return 'custom-class-1'
       case 9: return 'custom-class-2'
     }
